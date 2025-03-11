@@ -1,0 +1,15 @@
+
+.container {
+    width: 50%; /* Largura do container */
+    margin: 0 auto; /* Centraliza na página */
+    padding: 2rem; /* Espaçamento interno */
+    background: rgb(76, 161, 57); /* Cor de fundo */
+    border: 2px solid #ccc; /* Borda */
+    border-radius: 10px; /* Cantos arredondados */
+    text-align: center; /* Alinha o texto no meio */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    text-decoration: none; /* Tira o sublinhado */
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Deixa o texto mais grosso */
+}
+
