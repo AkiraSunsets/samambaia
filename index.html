@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
     <link href="nav.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
     <nav>
             <a href="index.html">Home</a>
             <a href="#about">Sobre</a>
@@ -15,11 +15,40 @@
     <title>Forestmost</title>
 </head>
 <body>
-    <h1>Forestmost</h1>
-    <div class="carrossel">
-        
+    <div class="container">
+        <div class="slides">
+            <button id="next-slide" class="slide-button">
+                <img src="seta-esquerda.png" height="20px"  alt="seta-esquerda">
+            </button>
+            <!--Start slide images-->
+            <div class="image-list">
+                <img src="samamabaia-americana-lojaplantei.jpg" alt="samambaia-americana" class="image-item">
+                <img src="samambaia-de-metro.jpg" alt="samambaia-de metro" class="image-item">
+                <img src="samambaia.avenca.jpg" alt="samambaia-avenca" class="image-item">
+            </div>
+            <button id="prev-slide" class="slide-button">
+                <img src="seta-direita (1).png" height="20px"  alt="seta-direita">
+            </button>
+            <!--End slides image-->
+            <div class="slider-scrollbar">
+                <div class="scrollbar-track">
+                    <div class="scrollbar-thumb">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
 
     </div>
+
+
+
+
+
+
+    <script src="main.js"></script>
 </body>
 <footer>
     <p id="copyright">Akirazinha esteve aqui...</p>
