@@ -1,0 +1,125 @@
+/* Estilo geral do rodapé */
+.footer {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'bold', sans-serif;
+    display: flex;
+}
+
+/* Estilo principal do rodapé */
+footer {
+    background-color: green;
+    padding: 20px 0;
+}
+
+/* Container que centraliza o conteúdo do rodapé */
+.container-footer {
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+/* Alinha as colunas do rodapé em linha */
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilo de cada coluna no rodapé */
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+/* Estilo dos títulos das colunas */
+.footer-col h4 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Estilo das listas nas colunas */
+.footer-col ul {
+    list-style: none;
+}
+
+/* Estilo de cada item da lista */
+.footer-col ul li {
+    margin: 10px 0;
+}
+
+/* Estilo dos links dentro dos itens de lista */
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre os links */
+.footer-col ul li a:hover {
+    color: #cecdcd;
+    padding-left: 10px;
+}
+
+/* Estilo das redes sociais */
+.footer-col .medias-socias {
+    margin-top: 30px;
+}
+
+/* Estilo dos ícones de redes sociais */
+.footer-col .medias-socias a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+
+/* Estilo do ícone dentro do link de redes sociais */
+.footer-col .medias-socias a i {
+    font-size: 20px;
+}
+
+/* Efeito ao passar o mouse sobre os ícones de redes sociais */
+.footer-col .medias-socias a:hover {
+    color: green;
+    background-color: white;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .footer-col {
+        width: 50%; /* 2 colunas em telas médias */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-col {
+        width: 100%; /* 1 coluna em telas pequenas */
+        text-align: center;
+    }
+    .footer-col ul {
+        padding: 0;
+    }
+    .footer-col .medias-socias {
+        justify-content: center;
+    }
+}
+
+

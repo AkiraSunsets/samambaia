@@ -1,0 +1,29 @@
+.titulo {
+    font-size: 2em;
+    font-weight: bold;
+    color: darkgreen;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  }
+  
+  .titulo::before,
+  .titulo::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 200px; /* Ajuste o comprimento das linhas */
+    height: 2px;
+    background-color: brown;
+    margin: 0 10px; /* Ajuste o espaçamento entre o texto e as linhas */
+  }
+
+  .container-about{
+    align-items: center;
+  }
+  
+  .about{
+      text-align: center;
+    font-size: 1.0rem;
+  }

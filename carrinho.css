@@ -1,0 +1,180 @@
+/* Define o container principal do carrinho */
+.containerr {
+	width: 500px;
+	margin: 100px auto;
+}
+
+/* Estiliza o container do carrinho */
+.cart-container {
+	border-radius: 8px;
+	box-shadow: 0 5px 20px rgb(120, 120, 120);
+}
+
+/* Define o fundo do corpo do carrinho com um gradiente */
+.cart-body {
+	background-color: #fff;
+}
+
+/* Estiliza os itens do carrinho */
+.cart-item {
+	padding: 15px 20px 0 20px;
+}
+
+/* Estiliza cada linha do carrinho */
+.cart-row {
+	display: flex;
+	padding: 20px 0;
+	flex-direction: row;
+	border-bottom: green 1px solid;
+}
+
+/* Ajusta a última linha do carrinho */
+.cart-row:last-of-type {
+
+}
+
+/* Define altura padrão para células da linha */
+.cart-row-cell {
+	height: 70px;
+}
+
+/* Estiliza a imagem do produto e o botão de remoção */
+.cart-row .pic {
+	flex: 1;
+	position: relative;
+}
+
+/* Botão para remover item do carrinho */
+.cart-row .pic a {
+	top: -8px; /* Move o elemento 5px para cima em relação à posição padrão */
+	left: -3px; /* Move o elemento 5px para a esquerda em relação à posição padrão */
+	width: 25px; /* Define a largura do botão como 20 pixels */
+	height: 25px; /* Define a altura do botão como 20 pixels */
+	color: #fff; /* Define a cor do texto como preto */
+	font-size: 1em; /* Define o tamanho da fonte proporcional ao tamanho base do documento */
+	text-align: center; /* Centraliza o texto dentro do botão */
+	position: absolute; /* Define a posição absoluta para que ele fique sobreposto ao elemento pai */
+	border-radius: 20px; /* Arredonda as bordas do botão, tornando-o circular */
+	text-decoration: none; /* Remove qualquer sublinhado do link */
+	display: inline-block; /* Permite que o link tenha dimensões definidas (largura e altura) */
+	background-color: darkgreen; /* Define a cor de fundo como branco */
+	border: green 1px solid; /* Adiciona uma borda de 1px sólida na cor cinza claro */
+	box-shadow: 2px 2px 2px rgb(160,160,160); /* Adiciona uma sombra deslocada 2px para baixo e para a direita, com leve desfoque */
+}
+
+
+/* Estiliza a imagem do produto */
+.cart-row .pic span {
+	width: 50px;
+	height: 50px;
+	border-radius: 30px;
+	display: inline-block;
+	background-size: contain;
+}
+
+/* Estiliza a descrição do produto */
+.cart-row .desc {
+	flex: 3;
+}
+
+/* Estiliza o título do produto */
+.cart-row .desc h5 {
+	margin: 10px 0 0;
+    font-family: arial;
+}
+
+/* Estiliza o código do produto */
+.cart-row .desc p {
+	margin: 5px 0 0;
+	font-size: 1.0em;
+
+}
+
+/* Estiliza a quantidade do produto */
+.cart-row .quant {
+	flex: 2;
+}
+
+/* Remove os estilos padrão da lista */
+.cart-row .quant ul {
+	list-style: none;
+}
+
+/* Estiliza os botões e número de quantidade */
+.cart-row .quant ul li {
+	display: inline-block;
+	font-size: 1.3em;
+	padding:  13px;
+}
+
+/* Estiliza os botões de aumentar e diminuir quantidade */
+.cart-row .quant ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+/* Estiliza o valor do item */
+.cart-row .amount {
+	flex: 1;
+}
+
+/* Ajusta a margem do valor do item */
+.cart-row .amount p {
+	margin: 23px 0 0 0;
+}
+
+/* Estiliza o cabeçalho do carrinho */
+.cart-container header {
+	color: #fff;
+	background-color: green;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+/* Estiliza o título do cabeçalho */
+.cart-container header h3 {
+	margin: 0;
+	padding: 20px;
+}
+
+/* Estiliza o rodapé do carrinho */
+.cart-container .abaixo {
+	padding: 20px;
+	text-align: center;
+	background-color: #fff;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+/* Estiliza o botão de finalizar compra */
+.cart-container .abaixo button {
+	color: #fff;
+	border: none;
+	font-size: 1em;
+	padding: 5px 15px;
+	background-color: green;
+    border-radius: 11px;
+}
+
+/* Estiliza a seção de totais (subtotal, taxa, total) */
+.cart-container .abaixo .totals {
+	display: flex;
+	flex-direction: row;
+}
+
+/* Ajusta a margem dos valores de total */
+.cart-container .abaixo .totals p {
+	margin: 5px 0;
+}
+
+/* Define alinhamento do rótulo dos totais */
+.cart-container .abaixo .total-label {
+	flex: 1;
+	text-align: left;
+}
+
+/* Define alinhamento do valor total */
+.cart-container .abaixo .total-amount {
+	flex: 1;
+	text-align: right;
+}

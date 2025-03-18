@@ -1,0 +1,81 @@
+/* Define o estilo geral do slider */
+.slider{
+    margin:  auto; /* Centraliza o slider horizontalmente */
+    width: 800px; /* Largura do slider */
+    height: 400px; /* Altura do slider */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar o limite do slider */
+    margin-top: 50px; /* Adiciona uma margem superior para afastar o slider do topo da página */
+}
+
+/* Define o estilo do contêiner que contém as imagens */
+.slides{
+    width: 400px; /* Largura do contêiner das imagens (metade da largura do slider) */
+    height: 400px; /* Altura das imagens */
+    display: flex; /* Usado para alinhar as imagens em linha (horizontalmente) */
+}
+
+/* Esconde os inputs (rádio buttons) da navegação */
+.slides input{
+    display: none; /* Faz com que os radio buttons não sejam visíveis */
+}
+
+/* Define o estilo de cada slide (imagem) */
+.slide{
+    width: 25%; /* Cada slide ocupa 25% da largura do contêiner, permitindo 4 imagens no total */
+    position: center; /* Permite que elementos dentro do slide possam ser posicionados em relação ao slide */
+}
+
+/* Estilo das imagens dentro de cada slide */
+.slide img{
+    width: 600px; /* Define que a imagem terá a largura total do slider */
+}
+
+/* Estilo da navegação manual que aparece abaixo do slider */
+.manual-navigation{
+    position: absolute; /* Posiciona a navegação manual de forma absoluta dentro do slider */
+    width: 800px; /* Largura da navegação é a mesma do slider */
+    margin-top: 10px; /* Adiciona um pequeno espaço entre o slider e os botões de navegação */
+    display: flex; /* Usa o modelo flexbox para alinhar os botões de navegação horizontalmente */
+    justify-content: center; /* Alinha os botões no centro */
+}
+
+/* Estilo de cada botão de navegação manual */
+.manual-btn{
+    border: 2px solid #6c584c; /* Cor da borda do botão */
+    padding: 5px; /* Espaçamento interno do botão */
+    border-radius: 10px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    transition: 1s; /* Animação suave quando o botão é hover */
+}
+
+/* Adiciona espaçamento entre os botões, exceto o último */
+.manual-btn:not(:last-child){
+    margin-right: 40px; /* Espaço de 40px entre os botões */
+}
+
+/* Efeito de hover nos botões de navegação */
+.manual-btn:hover{
+    background-color: #a98467; /* Altera a cor de fundo do botão ao passar o mouse */
+}
+
+/* Define o comportamento de navegação ao selecionar os radio buttons */
+#radio1:checked ~ .first{
+    margin-left: 0; /* Quando o radio1 é selecionado, exibe a primeira imagem */
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%; /* Quando o radio2 é selecionado, move o slider para mostrar a segunda imagem */
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%; /* Quando o radio3 é selecionado, move o slider para mostrar a terceira imagem */
+}
+
+/* Estilo para os divs da navegação automática (ainda não definidas no HTML, mas estão aqui no seu código) */
+.navigation-auto div{
+    border: 2px solid #6c584c; /* Cor da borda dos botões de navegação automática */
+    padding: 5px; /* Espaçamento interno dos botões */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    transition: 1s; /* Transição suave quando o botão é hover */
+}

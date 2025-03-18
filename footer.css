@@ -1,0 +1,26 @@
+.container {
+    position: relative;
+    /* Contêiner relativo para o posicionamento absoluto do footer */
+    min-height: 100vh;
+    /* Garante que o contêiner ocupe a altura total da viewport */
+}
+
+.footer {
+
+    display: flex;
+    background-color: black;/* Cor de fundo */
+    color: white;/* Cor do texto */
+    text-align: center;/* Centraliza o texto */
+    padding: 1rem 0;/* Espaçamento interno */
+    bottom: 0;/* Alinha na parte inferior */
+    width: 100%;/* Largura total */
+    font-size: 14px;/* Tamanho da fonte */
+}
+
+
+
+.footer p {
+    margin: 0;
+    /* Remove margens extras */
+
+}

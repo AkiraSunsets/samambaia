@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap:16px;
+    background-color: #F2EEEB;
+  }
+
+
+  .containerr {
+    display: flex;
+    justify-content: space-between; /* Para espaçar as imagens uniformemente */
+  }
+
+  .nice{
+    text-align: center;
+    font-family: bold;
+    font-size: 1.2rem;
+  }
